@@ -5,7 +5,7 @@
 Usage:
 	python user_input.py
 	
-The program user input from console.
+The program reads user input from console.
 @author Dragos STOICA
 @version 0.1
 @date 10.oct.2020
@@ -29,7 +29,7 @@ def main():
   var = input("Enter your command: ")
   if var == 'exit':
       #Exit the program
-      return
+      return 0
   elif var == 'help':
       #Display usage
       usage()
@@ -40,6 +40,7 @@ def main():
       print (now.strftime("%Y-%m-%d %H:%M:%S"))
   else : 
     print("Type help to see available commands.")
+  # Recursive call of main function
   main()
 
 if __name__ == "__main__":
